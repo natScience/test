@@ -1,0 +1,344 @@
+/* css 的初始化 */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #3e3e3e;
+}
+a {
+    color: #3e3e3e;
+    text-decoration: none;
+}
+a:hover {
+    color: #5a8509;
+}
+img {
+    display: block;
+    /* IE 6 - 8 图片有默认的两像素边框 */
+    border: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    /* inherit -> 继承父元素文字的大小 */
+    font-size: inherit;
+}
+ul, li {
+    list-style: none;
+}
+em, i {
+    font-style: normal;
+}
+.cut_text_overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.clear {
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+/* css 的初始化 END */
+
+/* 提取公共的 css 样式 */
+.w1003 {
+    width: 1003px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.bor {
+    border: 1px solid #dbdbdb;
+}
+
+/* html -> 代表整个页面，去掉页面的横向滚动条 */
+html {
+    overflow-x: hidden;
+}
+
+
+.header {
+    height: 140px;
+    /* css 文件中的相对路径，是以当前文件为准，不是以 html 文件为准 */
+    background: url(../images/hd-bg.jpg) 665px 32px no-repeat;
+}
+.header .logo {
+    margin: 20px 0 0 32px;
+}
+
+
+.naver {
+    height: 40px;
+    background: #2d7600;
+}
+.naver ul li {
+    float: left;
+    width: 167px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.naver ul li a {
+    font-size: 14px;
+    color: #ffffff;
+    display: block;
+}
+.naver ul li a:hover {
+    background: #419e07;
+}
+
+.slider {
+    position: relative;
+    height: 330px;
+}
+.slider img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    /* margin: 0 auto; */
+    margin-left: -720px;
+}
+
+.main {}
+
+.news {
+    width: 704px;
+    height: 275px;
+    margin-top: 13px;
+}
+.news .news-left {
+    width: 320px;
+    height: 240px;
+    background: green;
+    margin: 18px 0 0 18px;
+}
+.news .news-right {
+    width: 327px;
+    margin: 18px 18px 0 0;
+}
+/* 空格 -> 表示后代元素    > -> 严格的子元素 */
+.news .news-top {
+    height: 26px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.news .news-top p {
+    font-size: 16px;
+    color: #252525;
+    /* line-height -> 调整文本上下的位置，值可以比字号小 */
+    line-height: 14px;
+    border-bottom: 4px solid #2d7600;
+    float: left;
+    height: 23px;
+    padding: 0 16px 0 6px;
+}
+.news .news-top span {
+    float: left;
+    font-family: Arial;
+    font-weight: bold;
+    color: #adadad;
+    line-height: 18px;
+}
+.news .news-top a {
+    float: right;
+    color: #797979;
+}
+.news .news-top a:hover {
+    color: #5a8509;
+}
+.news .news-list ul li {
+    border-bottom: 1px dotted #a9adb3;
+    padding: 6px 0;
+}
+.news .news-list ul li h4 {
+    color: #5a8509;
+    line-height: 20px;
+    background: url(../images/icon-01.png) left center no-repeat;
+    padding-left: 10px;
+}
+.news .news-list ul li h4 i {
+    background: url(../images/icon-02.jpg) no-repeat;
+    width: 25px;
+    height: 9px;
+    /* 非常重要 */
+    display: inline-block;
+    margin-left: 10px;
+}
+.news .news-list ul li h5 {
+    line-height: 20px;
+}
+
+
+.notice {
+    width: 282px;
+    height: 275px;
+    margin-top: 13px;
+}
+.notice .top {
+    height: 40px;
+    border-bottom: 1px solid #dbdbdb;
+    margin: 0 6px;
+    overflow: hidden;
+}
+.notice .top p {
+    font-size: 16px;
+    color: #252525;
+    line-height: 38px;
+    border-bottom: 4px solid #2d7600;
+    float: left;
+    height: 37px;
+    padding: 0 6px;
+}
+.notice .top a {
+    float: right;
+    font-family: Arial;
+    font-weight: bold;
+    color: #adadad;
+    margin-right: 4px;
+    line-height: 45px;
+}
+.notice .top a:hover {
+    color: #5a8509;
+}
+.notice .list {
+    padding: 0 15px;
+}
+.notice .list ul li {
+    line-height: 35px;
+    border-bottom: 1px dotted #a9adb3;
+    background: url(../images/icon-01.png) 0 50% no-repeat;
+    padding-left: 10px;
+}
+
+
+.hydt {
+    width: 345px;
+    height: 275px;
+    margin-top: 16px;
+}
+.hydt .top {
+    height: 44px;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #ebf2dd;
+    overflow: hidden;
+}
+.hydt .top p {
+    font-size: 16px;
+    color: #252525;
+    line-height: 46px;
+    border-bottom: 4px solid #2d7600;
+    float: left;
+    height: 41px;
+    padding: 0 16px;
+}
+.hydt .top a {
+    float: right;
+    font-family: Arial;
+    font-weight: bold;
+    color: #71a510;
+    margin-right: 10px;
+    line-height: 50px;
+}
+.hydt .list {
+    padding: 0 15px;
+}
+.hydt .list ul li {
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px dotted #a9adb3;
+    background: url(../images/icon-01.png) 0 50% no-repeat;
+    padding-left: 10px;
+}
+.hydt .list ul li span {
+    float: right;
+    color: #5a8509;
+}
+.hydt .list ul li a {
+    /* 行内元素如有浮动属性，会变成块元素 */
+    float: left;
+    width: 225px;
+}
+
+
+/* 复制模块的css样式千万不能直接修改，因为会影响之前的模块
+   可以通过给新模块追加class属性的方式，实现我们的功能
+*/
+.hdxx {
+    margin-left: 12px;
+}
+
+
+.product {
+    margin-top: 16px;
+    background: url(../images/pro-bg.jpg) 150px 70px no-repeat;
+}
+.product .list {
+    width: 124px;
+}
+
+
+.banner {
+    margin-top: 14px;
+}
+
+
+.jsjl {
+    margin-top: 16px;
+}
+
+
+.last {
+    height: 254px;
+    margin-top: 14px;
+    background: url(../images/last-bg.jpg) 35px 22px no-repeat;
+}
+.last .hyzj {
+    margin: 6px 0 0 400px;
+    width: 325px;
+    height: 220px;
+    position: relative;
+}
+.last .hyzj:after {
+    /* content -> 这个属性是必须要有的，如果不需要文本，那么就写成空字符串 */
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 10px;
+    width: 0;
+    height: 100%;
+    border-left: 1px solid #dbdbdb;
+}
+
+
+.last .lxwm {
+    margin: 6px 0 0 15px;
+    width: 260px;
+    height: 220px;
+}
+
+
+.footer {
+    height: 160px;
+    background: url(../images/ft-bg.jpg) 15px 17px no-repeat;
+}
+.footer .ft-nav {
+    text-align: right;
+    padding-top: 22px; 
+}
+.footer .ft-nav a {
+    margin: 0 3px;
+}
+.footer .list {
+    padding-top: 30px;
+}
+.footer .list ul li {
+    text-align: right;
+    line-height: 30px;
+}
